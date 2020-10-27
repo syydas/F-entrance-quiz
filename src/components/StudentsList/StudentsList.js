@@ -26,7 +26,7 @@ class StudentList extends React.Component {
             </span>
           ))}
           {this.state.display && <input type="name" />}
-          <button type="button" onClick={this.handleClick.bind(this)}>
+          <button type="button" className="add_btn" onClick={this.handleClick.bind(this)}>
             +添加学员
           </button>
         </div>
