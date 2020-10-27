@@ -5,8 +5,12 @@ class StudentList extends React.Component {
     return (
       <div>
         <h1>学员列表</h1>
-        <ul className="student-list">
-          <li>Suqin</li>
+        <ul className="students-list">
+          {this.props.students.map((student) => (
+            <li key={student.id}>
+              {student.id}. {student.name}
+            </li>
+          ))}
         </ul>
       </div>
     );
