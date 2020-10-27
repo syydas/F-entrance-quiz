@@ -1,0 +1,17 @@
+@import 'src/style/_variables.scss';
+
+.students-group {
+  margin-bottom: 20px;
+  .group-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .group_btn {
+    padding: 10px 20px;
+    margin: 20px;
+    border: none;
+    background-color: #e85559;
+    color: #fff;
+  }
+}
