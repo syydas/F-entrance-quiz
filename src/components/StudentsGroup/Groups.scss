@@ -1,0 +1,12 @@
+@import 'src/style/_variables.scss';
+
+.groups {
+  margin-bottom: 20px;
+  border: 1px solid $gray;
+  .group-name {
+    padding: 5px 0;
+    text-align: center;
+    background-color: $gray;
+    color: #fff;
+  }
+}
