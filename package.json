@@ -15,7 +15,8 @@
     "axios": "^0.21.0",
     "node-sass": "^4.14.1",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "src": "^1.1.2"
   },
   "devDependencies": {
     "enzyme": "^3.11.0",
