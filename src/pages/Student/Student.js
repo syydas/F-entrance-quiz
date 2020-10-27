@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import StudentsList from '../../components/StudentsList/StudentsList';
 import 'babel-polyfill';
+import StudentsGroup from '../../components/StudentsGroup/StudentsGroup';
 
 class Student extends React.Component {
   constructor(props) {
@@ -19,6 +20,7 @@ class Student extends React.Component {
   render() {
     return (
       <div>
+        <StudentsGroup />
         <StudentsList students={this.state.students} />
       </div>
     );
