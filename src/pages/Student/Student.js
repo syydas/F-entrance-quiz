@@ -1,8 +1,13 @@
 import React from 'react';
+import StudentList from '../../components/StudentsList/StudentsList';
 
 class Student extends React.Component {
   render() {
-    return <div>Hello, this is Suqin~</div>;
+    return (
+      <div>
+        <StudentList />
+      </div>
+    );
   }
 }
 
