@@ -11,15 +11,18 @@ class Student extends React.Component {
       students: [],
     };
   }
-
+  // TODO GTB-知识点: + 合理使用async/await
   async componentDidMount() {
+    // TODO GTB-知识点: * 建议把数据请求提取到单独的service
     const students = await axios.get('http://localhost:8080/students');
     this.setState({ students: students.data });
   }
 
   render() {
     return (
+      // TODO GTB-知识点: - 建议使用<main>标签
       <div>
+        {/* TODO GTB-知识点: + 第一层组件划分合理 */}
         <StudentsGroup />
         <StudentsList students={this.state.students} />
       </div>
